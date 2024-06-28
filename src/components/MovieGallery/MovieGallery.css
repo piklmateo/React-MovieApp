@@ -1,0 +1,55 @@
+.movie-gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.search {
+  width: 100%;
+  padding: 10px 40px 10px 40px;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1400px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
