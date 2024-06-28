@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite - Movie Rating App
+## Description
+Movie Rating App
+A web application to rate movies you have watched, built with React and Vite, using the TMDB API for movie data and JSON Server for a mock backend.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+Browse popular movies from TMDB
+Search for movies
+View information about a movie
+Rate movies
 
-Currently, two official plugins are available:
+## Installation
+### Prerequisites
+- Node.js
+- npm or yarn
+- JSON Server
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Setup
+Clone the repository:
+- git clone https://github.com/yourusername/movie-rating-app.git
+- cd movie-rating-app
 
-## Expanding the ESLint configuration
+## Install dependencies:
+- npm install
+### or
+ - yarn install
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Create a .env file in the root of the project and add your TMDB API key:
+- VITE_TMDB_ACCESS_TOKEN=your_tmdb_access_token
+- VITE_JSON_SERVER_API=http://localhost:12413/rated-movies
 
-- Configure the top-level `parserOptions` property like this:
+## Start JSON Server:
+- npm json-server --watch db.json --port 12413
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Start the development server:
+- npm run dev
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## This project is created for learning purposes and feel free to do with it as you like:)
