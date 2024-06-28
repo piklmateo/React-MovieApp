@@ -1,6 +1,7 @@
 # React + TypeScript + Vite - Movie Rating App
 ## Description
-Movie Rating App
+Movie Rating App 
+
 A web application to rate movies you have watched, built with React and Vite, using the TMDB API for movie data and JSON Server for a mock backend.
 
 ## Features
@@ -35,4 +36,4 @@ Clone the repository:
 ## Start the development server:
 - npm run dev
 
-## This project is created for learning purposes and feel free to do with it as you like:)
+## This project is created for learning purposes so feel free to do with it as you like:)
