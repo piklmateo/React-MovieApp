@@ -21,6 +21,9 @@
 
 .rating-container {
   display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
   gap: 0.5rem;
 }
 
@@ -45,4 +48,13 @@
 
 .btn-rating:hover {
   background-color: #3b3b3b;
+}
+
+@media (max-width: 960px) {
+  .movie-info-container {
+    flex-direction: column;
+  }
+  .movie-info-img {
+    margin: 0 auto;
+  }
 }
