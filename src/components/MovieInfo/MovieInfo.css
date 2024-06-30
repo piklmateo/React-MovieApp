@@ -19,7 +19,7 @@
   text-align: start;
 }
 
-.rating-container {
+.rating-container-movie-page {
   display: flex;
   align-items: center;
   padding: 0;
@@ -27,12 +27,12 @@
   gap: 0.5rem;
 }
 
-.rating-container > input {
+.rating-container-movie-page > input {
   width: 40px;
   text-align: center;
 }
 
-.rating-container > input:focus {
+.rating-container-movie-page > input:focus {
   outline: none;
 }
 

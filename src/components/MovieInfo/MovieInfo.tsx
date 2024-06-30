@@ -53,7 +53,7 @@ const MovieInfo = () => {
           <p>{movieInfo.overview}</p>
         </div>
         <h2>My rating</h2>
-        <div className="rating-container">
+        <div className="rating-container-movie-page">
           <input
             type="text"
             name="rating"
